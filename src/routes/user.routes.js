@@ -3,8 +3,10 @@ import { UsersController } from "../controllers/users.js";
 
 const UsersRoute = Router()
 
-// READ Users
+// LOGIN
 UsersRoute.get('/', UsersController.getUsers)
 
+// SIGNIN
+UsersRoute.get('/', UsersController.postUsers)
 
 export default UsersRoute
